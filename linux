@@ -3,5 +3,7 @@ sudo tee /sys/class/backlight/radeon_bl0/brightness <<< 100
 
 install some Win file system:
 sudo apt-get install dosfstools
+then you formate by vfat:
+sudo mkfs.vfat /path/to/device/
 
 
