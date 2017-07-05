@@ -1,0 +1,7 @@
+alert screen light:
+sudo tee /sys/class/backlight/radeon_bl0/brightness <<< 100
+
+install some Win file system:
+sudo apt-get install dosfstools
+
+
