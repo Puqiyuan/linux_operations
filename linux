@@ -6,4 +6,12 @@ sudo apt-get install dosfstools
 then you formate by vfat:
 sudo mkfs.vfat /path/to/device/
 
+upgrade kernel:
+apt-cache search linux-image
+then sudo apt-get install linux-image
+
+alter font size:
+change the line to: [ -x /usr/bin/xterm ] && /usr/bin/xterm -fa 'Monospace' -fs 18 -e tmux &
+of .xsession file
+
 
