@@ -14,4 +14,8 @@ alter font size:
 change the line to: [ -x /usr/bin/xterm ] && /usr/bin/xterm -fa 'Monospace' -fs 18 -e tmux &
 of .xsession file
 
+tar a directory
+tar -cvf tecmint-14-09-12.tar /home/tecmint/
+untar a directory:
+tar -xvf public_html-14-09-12.tar
 
