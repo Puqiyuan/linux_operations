@@ -19,3 +19,14 @@ tar -cvf tecmint-14-09-12.tar /home/tecmint/
 untar a directory:
 tar -xvf public_html-14-09-12.tar
 
+untar .gz.bz2:
+tar -xjf z_tools.tar.bz2
+
+remove file by inode:
+find . -inum 10093585 -exec rm -i {} \;
+
+find uuid:
+sudo blkid
+
+update grub:
+sudo update-grub
