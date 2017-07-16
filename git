@@ -1,0 +1,5 @@
+no password need:
+git config --global credential.helper 'cache --timeout 7200'
+more times should can
+git push /your/repo/addr/
+
