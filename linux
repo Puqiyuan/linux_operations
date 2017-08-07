@@ -30,3 +30,22 @@ sudo blkid
 
 update grub:
 sudo update-grub
+
+for restart connect wireless:
+/etc/init.d/network-manager restart
+
+check boot time:
+last reboot
+
+untar .tar.xz
+tar xJvf linux-4.9.11.tar.xz
+
+how to compile kernel:
+1, first, download the kernel from web, end with tar.xz
+2, untar: tar xJvf linux-4.9.11.tar.xz
+3, make config file so gcc know how to compile kernel, if you do not 
+need to change config:  cp /boot/config-3.16.0-4-amd64 ~/kernel/linux-source-3.16/.config
+4, then, compile kernel: make -j2, the number 2 is your cpu cores.
+5, then: make modules
+6, then: sudo make modules_install
+7, then: sudo make install
