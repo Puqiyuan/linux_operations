@@ -51,4 +51,16 @@ need to change config:  cp /boot/config-3.16.0-4-amd64 ~/kernel/linux-source-3.1
 7, then: sudo make install
 
 change boot order:
-sudo nano /boot/grub/grub.cfg 
+sudo nano /etc/default/grub
+
+conert doc to pdf:
+libreoffice --headless --convert-to pdf {filename.doc, filename.xls}
+
+untar tar.gz
+tar xvf package.tar.gz
+
+install .deb file:
+sudo dpkg -i /path/to/deb/file
+
+search file by content:
+grep -rnw '/path/to/somewhere/' -e 'pattern'
