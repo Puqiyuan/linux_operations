@@ -81,3 +81,16 @@ chmod 777 /tmp/bob
 2:
 ssh alice@cs3.swfu.edu.cn
 tmux -S /tmp/bob a -t bob
+
+to copy a local directory to remote server:
+scp -r nameOfFolderToCopy username@ipaddress:/path/to/copy/
+
+to copy a remote server directory to local computer:
+scp -r username@ipaddress:/path/of/folder/to/copy /target/local/directory
+
+to copy a local file to remote server:
+scp linux_operations/linux  root@107.170.208.237:/root/
+
+to copy a remote file to local system:
+scp root@107.170.208.237:/root/mbox /home/pqy7172/
+
