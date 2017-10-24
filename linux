@@ -94,3 +94,11 @@ scp linux_operations/linux  root@107.170.208.237:/root/
 to copy a remote file to local system:
 scp root@107.170.208.237:/root/mbox /home/pqy7172/
 
+to execute a remote command:
+ssh USER@HOST 'COMMAND'
+
+to execute many remote commands:
+ssh USER@HOST 'COMMAND1; COMMAND2; COMMAND3'
+
+to execute a remote bash:
+ssh USER@HOST 'bash -s' < SCRIPT
