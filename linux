@@ -102,3 +102,9 @@ ssh USER@HOST 'COMMAND1; COMMAND2; COMMAND3'
 
 to execute a remote bash:
 ssh USER@HOST 'bash -s' < SCRIPT
+
+list installed package:
+dpkg --list
+
+delete package:
+sudo apt-get --purge remove packagename
