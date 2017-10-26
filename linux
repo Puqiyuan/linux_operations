@@ -148,3 +148,6 @@ add this line to that file:
 wx672   ALL = NOPASSWD: ALL
 then:
 sudo chmod 440 /etc/sudoers.d/username
+
+list all supprt filesystem:
+cat /proc/filesystems 
