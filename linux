@@ -151,3 +151,6 @@ sudo chmod 440 /etc/sudoers.d/username
 
 list all supprt filesystem:
 cat /proc/filesystems 
+
+list all open ports:
+netstat -l
