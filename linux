@@ -141,3 +141,10 @@ Then you need to add user public key to authorized_keys file.
 list all sudo user:
 grep -Po '^sudo.+:\K.*$' /etc/group / grep '^sudo:.*$' /etc/group | cut -d: -f4 
 /getent group sudo | cut -d: -f4
+
+give user sudo with no passwd:
+nano /etc/sudoers.d/username
+add this line to that file:
+wx672   ALL = NOPASSWD: ALL
+then:
+sudo chmod 440 /etc/sudoers.d/username
