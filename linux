@@ -108,3 +108,32 @@ dpkg --list
 
 delete package:
 sudo apt-get --purge remove packagename
+
+echo a tab before txt line:
+echo -e ' \t f'
+
+list all local user:
+cut -d: -f1 /etc/passwd
+
+list all online user:
+w/users/who
+
+to list all local users:
+cut -d: -f1 /etc/passwd
+
+to add user with ssh key login:
+1, create home directory + .ssh directory:
+mkdir -p /home/mynewuser/.ssh
+2, create authorized keys file:
+touch /home/mynewuser/.ssh/authorized_keys
+3, create user + set home directpry:
+useradd -d /home/mynewuser mynewuser
+4, add user to sudo group:
+usermod -aG sudo mynewuser
+5, set permissions:
+chown -R mynewuser:mynewuser /home/mynewuser/
+chown root:root /home/mynewuser
+chmod 700 /home/mynewuser/.ssh
+chmod 644 /home/mynewuser/.ssh/authorized_keys
+
+Then you need to add user public key to authorized_keys file.
