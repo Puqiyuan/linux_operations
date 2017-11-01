@@ -50,6 +50,7 @@ need to change config:  cp /boot/config-3.16.0-4-amd64 ~/kernel/linux-source-3.1
 6, then: sudo make modules_install
 7, then: sudo make install
 
+<<<<<<< HEAD
 convert to pdf:
 libreoffice --headless --convert-to pdf *.xlsx
 
@@ -57,3 +58,109 @@ sometimes when you ssh-add, you got:
 Could not open a connection to your authentication agent, this may because your id_rsa file
 is not your own:
 chown yourname id_rsa
+=======
+change boot order:
+sudo nano /etc/default/grub
+
+conert doc to pdf:
+libreoffice --headless --convert-to pdf {filename.doc, filename.xls}
+
+untar tar.gz
+tar xvf package.tar.gz
+
+install .deb file:
+sudo dpkg -i /path/to/deb/file
+
+search file by content:
+grep -rnw '/path/to/somewhere/' -e 'pattern'
+
+adjust resolution:
+gtf 1920 1080 60
+xrandr --newmode "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync
+xrandr --addmode VGA1 "1920x1080_60.00"
+xrandr --output VGA1 --mode "1920x1080_60.00"
+
+for using ssh key login, first you need to add ssh private key:
+ssh-add ~/.ssh/pqy
+
+remote control, 1:
+ssh bob@cs3.swfu.edu.cn
+tmux -S /tmp/bob new -s bob
+chmod 777 /tmp/bob
+2:
+ssh alice@cs3.swfu.edu.cn
+tmux -S /tmp/bob a -t bob
+
+to copy a local directory to remote server:
+scp -r nameOfFolderToCopy username@ipaddress:/path/to/copy/
+
+to copy a remote server directory to local computer:
+scp -r username@ipaddress:/path/of/folder/to/copy /target/local/directory
+
+to copy a local file to remote server:
+scp linux_operations/linux  root@107.170.208.237:/root/
+
+to copy a remote file to local system:
+scp root@107.170.208.237:/root/mbox /home/pqy7172/
+
+to execute a remote command:
+ssh USER@HOST 'COMMAND'
+
+to execute many remote commands:
+ssh USER@HOST 'COMMAND1; COMMAND2; COMMAND3'
+
+to execute a remote bash:
+ssh USER@HOST 'bash -s' < SCRIPT
+
+list installed package:
+dpkg --list
+
+delete package:
+sudo apt-get --purge remove packagename
+
+echo a tab before txt line:
+echo -e ' \t f'
+
+list all local user:
+cut -d: -f1 /etc/passwd
+
+list all online user:
+w/users/who
+
+to list all local users:
+cut -d: -f1 /etc/passwd
+
+to add user with ssh key login:
+1, create home directory + .ssh directory:
+mkdir -p /home/mynewuser/.ssh
+2, create authorized keys file:
+touch /home/mynewuser/.ssh/authorized_keys
+3, create user + set home directpry:
+useradd -d /home/mynewuser mynewuser
+4, add user to sudo group:
+usermod -aG sudo mynewuser
+5, set permissions:
+chown -R mynewuser:mynewuser /home/mynewuser/
+chown root:root /home/mynewuser
+chmod 700 /home/mynewuser/.ssh
+chmod 644 /home/mynewuser/.ssh/authorized_keys
+
+Then you need to add user public key to authorized_keys file.
+
+list all sudo user:
+grep -Po '^sudo.+:\K.*$' /etc/group / grep '^sudo:.*$' /etc/group | cut -d: -f4 
+/getent group sudo | cut -d: -f4
+
+give user sudo with no passwd:
+nano /etc/sudoers.d/username
+add this line to that file:
+wx672   ALL = NOPASSWD: ALL
+then:
+sudo chmod 440 /etc/sudoers.d/username
+
+list all supprt filesystem:
+cat /proc/filesystems 
+
+list all open ports:
+netstat -l
+>>>>>>> 0582c314cfcc305ec967449c2ebe5b7e73a99b01
