@@ -164,3 +164,6 @@ cat /proc/filesystems
 list all open ports:
 netstat -l
 >>>>>>> 0582c314cfcc305ec967449c2ebe5b7e73a99b01
+
+copy public key to server:
+ssh-copy-id username@remote_host
