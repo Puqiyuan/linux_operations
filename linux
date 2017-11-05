@@ -50,6 +50,15 @@ need to change config:  cp /boot/config-3.16.0-4-amd64 ~/kernel/linux-source-3.1
 6, then: sudo make modules_install
 7, then: sudo make install
 
+<<<<<<< HEAD
+convert to pdf:
+libreoffice --headless --convert-to pdf *.xlsx
+
+sometimes when you ssh-add, you got:
+Could not open a connection to your authentication agent, this may because your id_rsa file
+is not your own:
+chown yourname id_rsa
+=======
 change boot order:
 sudo nano /etc/default/grub
 
@@ -154,6 +163,7 @@ cat /proc/filesystems
 
 list all open ports:
 netstat -l
+<<<<<<< HEAD
 
 check whos is using shadsocks:
 netstat -natulp | egrep 1000[1-3] | grep -E "tcp.*ESTABLISHED" | awk '{print $4, $5}' | cut -d: -f2 | sort -u
@@ -166,3 +176,6 @@ kill -9 pid
 
 change gb2312 encoding to UTF:
 iconv -f gb2312 -t UTF-8 file1.txt > file2.txt
+
+copy public key to server:
+ssh-copy-id username@remote_host
