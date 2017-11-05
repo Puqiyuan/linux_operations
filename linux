@@ -154,3 +154,15 @@ cat /proc/filesystems
 
 list all open ports:
 netstat -l
+
+check whos is using shadsocks:
+netstat -natulp | egrep 1000[1-3] | grep -E "tcp.*ESTABLISHED" | awk '{print $4, $5}' | cut -d: -f2 | sort -u
+
+kill process by pid:
+first you need to know which process you want to kill:
+ps -A | grep  ssserver
+then kill it:
+kill -9 pid
+
+change gb2312 encoding to UTF:
+iconv -f gb2312 -t UTF-8 file1.txt > file2.txt
