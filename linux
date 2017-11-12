@@ -179,3 +179,9 @@ iconv -f gb2312 -t UTF-8 file1.txt > file2.txt
 
 copy public key to server:
 ssh-copy-id username@remote_host
+
+enable color for less command:
+apt-get install source-highlight
+nano ~/.bashrc, add these:
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R -N'
