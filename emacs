@@ -9,3 +9,12 @@ C-x p
 
 buffer switch:
 alt + p
+
+top of file:
+M-<
+
+save different name:
+C-x C-w
+
+bottom of file:
+M->

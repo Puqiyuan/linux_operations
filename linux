@@ -185,3 +185,6 @@ apt-get install source-highlight
 nano ~/.bashrc, add these:
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R -N'
+
+or you can using view command just viewing file:
+view filename.cpp
