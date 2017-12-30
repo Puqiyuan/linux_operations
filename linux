@@ -192,3 +192,6 @@ view filename.cpp
 change font:
 sudo cp SentyWEN2017.ttf /usr/local/share/fonts/
 fc-cache
+
+kill all windows:
+xdotool search "" windowkill %@
