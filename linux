@@ -188,3 +188,7 @@ export LESS=' -R -N'
 
 or you can using view command just viewing file:
 view filename.cpp
+
+change font:
+sudo cp SentyWEN2017.ttf /usr/local/share/fonts/
+fc-cache

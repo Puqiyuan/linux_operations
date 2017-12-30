@@ -18,3 +18,6 @@ C-x C-w
 
 bottom of file:
 M->
+
+search backward:
+C-r

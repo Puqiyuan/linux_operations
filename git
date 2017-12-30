@@ -3,3 +3,18 @@ git config --global credential.helper 'cache --timeout 7200'
 more times should can
 git push /your/repo/addr/
 
+1。把当前最新版与758905f版做个比较，生成一个patch。
+
+git diff 758905f5411840c269b6a2e48d7fdcf1240dc541 thesis.tex > tmp.patch
+
+2。checkout 758905f 版的 thesis.tex 文件
+
+git co -f 758905f5411840c269b6a2e48d7fdcf1240dc541 thesis.tex
+
+3。打补丁
+
+git apply  758905f.patch
+
+4。打你的tmp.patch补丁
+
+git apply tmp.patch
