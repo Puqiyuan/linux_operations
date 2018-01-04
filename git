@@ -18,3 +18,59 @@ git apply  758905f.patch
 4。打你的tmp.patch补丁
 
 git apply tmp.patch
+
+To initialize a Git repository:
+git init
+
+the current state:
+git status
+
+wildcard:
+git add '*.txt'
+
+log:
+git log
+
+add a remote repo:
+git remote add origin https://github.com/try-git/try_git.git
+
+check for changes on our GitHub repository and pull down any new changes by running:
+git pull origin master
+
+the diff of our most recent commit, which we can refer to using the HEAD pointer.
+git diff HEAD
+
+run git diff with the --staged option to see the changes you just staged
+git diff --staged
+
+unstage files by using the git reset command. 
+git reset octofamily/octodog.txt
+
+Files can be changed back to how they were at the last commit by using the command: 
+git checkout -- octocat.txt
+
+When developers are working on a feature or bug they'll 
+often create a copy (aka. branch) of their code they can make separate commits to. 
+Then when they're done they can merge this branch back into their main master branch:
+create a branch:
+git branch clean_up
+
+switch branches using the git checkout <branch> command:
+git checkout clean_up
+
+by using the git rm command which will not only remove the actual files from disk, 
+but will also stage the removal of the files for us:
+git rm '*.txt'
+
+switch back:
+git checkout master
+
+tell Git to merge the clean_up branch:
+git merge clean_up
+
+use git branch -d <branch name> to delete a branch:
+git branch -d clean_up
+
+
+
+
