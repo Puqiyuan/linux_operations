@@ -195,3 +195,9 @@ fc-cache
 
 kill all windows:
 xdotool search "" windowkill %@
+
+when stuck in ssh:
+shift + ` + .
+or
+ps -ef  |grep ssh
+kill 57139
