@@ -71,6 +71,48 @@ git merge clean_up
 use git branch -d <branch name> to delete a branch:
 git branch -d clean_up
 
+no warn git apply:
+git apply --whitespace=nowarn patchname.patch
 
 
+应用一个补丁：
+git branch -d tmp
 
+git branch tmp
+
+git checkout tmp
+
+git checkout -f $point
+
+git apply --ignore-whitespace $Basename
+
+git add .
+
+git ci . -m "apply $matcher patch file"
+
+git checkout master
+
+git merge tmp
+
+git branch -d tmp
+
+git add .
+
+git ci . -m "apply $matcher patch file"
+
+git push
+有时候应用一个补丁并不那么顺利，比如在merge的时候遇到了confilt,
+这时需要手动选择=上的内容还是=下的内容，还是你自己添加的内容，并且
+有时候出现这样的信息：
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  51f79d2 apply patch
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 51f79d2
+
+Switched to branch 'tmp'
+就需要按提示在此创建分支，而把新创建的这个分支merge到你的master中。

@@ -21,3 +21,6 @@ M->
 
 search backward:
 C-r
+
+search and replace:
+C-s M-%
