@@ -117,3 +117,6 @@ to do so with:
 Switched to branch 'tmp'
 就需要按提示在此创建分支，而把新创建的这个分支merge到你的master中。
 同时在合并过程中的commit必须用git commit
+
+undo a commit most recently:
+git reset HEAD~
