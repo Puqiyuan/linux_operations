@@ -201,3 +201,7 @@ shift + ` + .
 or
 ps -ef  |grep ssh
 kill 57139
+
+sawfish-merlin install:
+install sawfish-merlin-ugliness_1.3.1-1_all.deb which in the same directoy.
+sudo emace /usr/share/sawfish/site-lisp/merlin/uglicon.jl, comment expert.
