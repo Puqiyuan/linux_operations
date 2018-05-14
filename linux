@@ -208,3 +208,6 @@ sudo emace /usr/share/sawfish/site-lisp/merlin/uglicon.jl, comment expert.
 
 mount Android:                                                                                                   
 jmtpfs Mount
+
+zip a dir:
+zip -r myfiles.zip mydir
