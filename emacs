@@ -24,3 +24,8 @@ C-r
 
 search and replace:
 C-s M-%
+
+comment block:
+M-x comment-region
+uncomment block:
+M-x uncomment-region
