@@ -120,3 +120,7 @@ Switched to branch 'tmp'
 
 undo a commit most recently:
 git reset HEAD~
+
+git large file:
+https://git-lfs.github.com/
+maybe you can not use git+ssh maner
