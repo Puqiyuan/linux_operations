@@ -42,3 +42,15 @@ Set the mark, pushing it onto the mark ring, without activating it.
 
 go to a marker that set already:
 C-u C-<SPC>
+
+Jump to the tag underneath the cursor:
+M-. <RET>
+
+Search for a particular tag:
+M-. <tag> <RET>
+
+Find the next definition for the last tag:
+C-u M-.
+
+Pop back to where you previously invoked "M-.":
+M-*
