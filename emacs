@@ -29,3 +29,16 @@ comment block:
 M-x comment-region
 uncomment block:
 M-x uncomment-region
+
+register position:
+set a position for return after a while:
+C-x r <SPC> r
+jump to the register position that set already:
+C-x r j r
+
+set a marker:
+C-<SPC> C-<SPC>
+Set the mark, pushing it onto the mark ring, without activating it. 
+
+go to a marker that set already:
+C-u C-<SPC>
