@@ -211,3 +211,6 @@ jmtpfs Mount
 
 zip a dir:
 zip -r myfiles.zip mydir
+
+find file recursively:
+find . -name "foo*"
