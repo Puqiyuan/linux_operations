@@ -214,3 +214,6 @@ zip -r myfiles.zip mydir
 
 find file recursively:
 find . -name "foo*"
+
+resize picture:
+convert -resize 50% 优秀毕业生.jpg youxiu.jpg
