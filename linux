@@ -217,3 +217,12 @@ find . -name "foo*"
 
 resize picture:
 convert -resize 50% 优秀毕业生.jpg youxiu.jpg
+
+create a new snippet:
+C-c & C-n
+
+save a snippet:
+C-c C-c 
+
+view a snippet:
+C-c & C-v
