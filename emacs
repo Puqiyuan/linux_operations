@@ -54,3 +54,10 @@ C-u M-.
 
 Pop back to where you previously invoked "M-.":
 M-*
+
+switch buffer: 
+first list buffer: C-x b 
+then select the buffer 
+or: 
+C-x <left> 
+C-x <right>
