@@ -61,3 +61,6 @@ then select the buffer
 or: 
 C-x <left> 
 C-x <right>
+
+find file recursely:
+C-x M-f
