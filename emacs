@@ -64,3 +64,9 @@ C-x <right>
 
 find file recursely:
 C-x M-f
+
+new snippet:
+C-c & C-n
+
+save new snippet:
+C-c C-c
