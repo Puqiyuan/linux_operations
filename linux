@@ -226,3 +226,5 @@ C-c C-c
 
 view a snippet:
 C-c & C-v
+
+mount -t iso9660 /dev/cdrom /mnt/cdrom
