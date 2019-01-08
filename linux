@@ -228,3 +228,6 @@ view a snippet:
 C-c & C-v
 
 mount -t iso9660 /dev/cdrom /mnt/cdrom
+
+convert iso-8859 to utf8:
+
