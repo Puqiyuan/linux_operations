@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cincl
+# key: cincl
+# --
+#+INCLUDE: "$0" src c:lines ""

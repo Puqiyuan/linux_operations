@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: head
+# key: head
+# --
+#+TITLE:$0
+#+AUTHOR: Cauchy（蒲启元）
+#+EMAIL: pqy7172@gmail.com

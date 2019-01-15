@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name:cinc
+# key: cinc
+# --
+#+INCLUDE: "$0" src c

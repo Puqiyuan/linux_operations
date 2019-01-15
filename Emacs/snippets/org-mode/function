@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: function
+# key: function
+# --
+- =$0= :
+
+   #+BEGIN_SRC
+
+   #+END_SRC
+   *说明：*
