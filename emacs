@@ -70,3 +70,8 @@ C-c & C-n
 
 save new snippet:
 C-c C-c
+
+emacs grep:
+M-x grep
+use like this:
+ grep -rnw '/home/pqy7172/c_jit_v2' -e 'globalStackProtectBeginX86'
