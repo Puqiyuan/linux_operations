@@ -231,3 +231,5 @@ mount -t iso9660 /dev/cdrom /mnt/cdrom
 
 convert iso-8859 to utf8:
 
+add static route:
+sudo route add -net 10.66.240.0 netmask 255.255.240.0 gw 10.66.255.254 dev ens33
