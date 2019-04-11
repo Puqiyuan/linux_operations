@@ -1,0 +1,1 @@
+sudo ip route add 10.66.244.215 via 10.66.255.254 dev ens33
