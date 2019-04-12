@@ -236,3 +236,6 @@ sudo route add -net 10.66.240.0 netmask 255.255.240.0 gw 10.66.255.254 dev ens33
 
 change timezone:
 sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+tgz uncompress:
+tar -xvzf /path/to/yourfile.tgz
