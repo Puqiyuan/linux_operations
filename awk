@@ -41,3 +41,5 @@ awk '{ if($3 == "B6") print $0;}' geeksforgeeks.txt
 To print the squares of first numbers from 1 to n say 6:
 awk 'BEGIN { for(i=1;i<=5;i++) print "square of", i, "is",i*i; }'
 
+specify : separator:
+awk -F ":" '{print $2}' zhanyongneicun
