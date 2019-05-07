@@ -245,3 +245,8 @@ tar -czvf archive.tar.gz /usr/local/something
 
 log in with cipher:
 ssh -c aes128-cbc develop@10.66.246.103 -p 50022
+
+sftp transfer big file:
+sftp -oPort=60001 username@ip
+then:
+put /path/to/local/file /path/to/remote/file
