@@ -239,3 +239,6 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 tgz uncompress:
 tar -xvzf /path/to/yourfile.tgz
+
+tar and compress a directory:
+tar -czvf archive.tar.gz /usr/local/something
