@@ -242,3 +242,6 @@ tar -xvzf /path/to/yourfile.tgz
 
 tar and compress a directory:
 tar -czvf archive.tar.gz /usr/local/something
+
+log in with cipher:
+ssh -c aes128-cbc develop@10.66.246.103 -p 50022
