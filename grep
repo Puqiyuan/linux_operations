@@ -1,0 +1,26 @@
+This string example will only mach "GNU" if it occurs at the very beginning of a line.
+grep "^GNU" GPL-3
+We will match every line ending with the word "and" in the following regular expression:
+grep "and$" GPL-3
+For example, if we want to match anything that has two characters and then the string "cept", we could use the following pattern:
+grep "..cept" GPL-3
+This means that if we wanted to find the lines that contain "too" or "two", we could specify those variations succinctly by using the following pattern:
+grep "t[wo]o" GPL-3
+This example is like the pattern ".ode", but will not match the pattern "code":
+grep "[^c]ode" GPL-3
+This means that if we want to find every line that begins with a capital letter, we can use the following pattern:
+grep "^[A-Z]" GPL-3
+If we wanted to find each line that contained an opening and closing parenthesis, with only letters and single spaces in between, we could use the following expression:
+grep "([A-Za-z ]*)" GPL-3
+For instance, if we want to find any line that begins with a capital letter and ends with a period, we could use the following expression. The ending period is escaped so that it represents a literal period instead of the usual "any character" meaning::
+grep "^[A-Z].*\.$" GPL-3
+The following will find either "GPL" or "General Public License" in the text::
+grep -E "(GPL|General Public License)" GPL-3
+The following matches "copyright" and "right" by putting "copy" in an optional group:
+grep -E "(copy)?right" GPL-3
+The following expression matches the string "free" plus one or more characters that are not whitespace:
+grep -E "free[^[:space:]]+" GPL-3
+If we want to find all of the lines that contain triple-vowels, we can use the following expression:
+grep -E "[AEIOUaeiou]{3}" GPL-3
+If we want to match any words that have between 16 and 20 characters, we can use the following expression:
+grep -E "[[:alpha:]]{16,20}" GPL-3
