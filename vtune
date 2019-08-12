@@ -1,0 +1,26 @@
+Complete
+--------------------------------------------------------------------------------
+Thank you for installing and for using the Intel VTune Amplifier 2019 Update 5
+
+
+To get started using Intel VTune Amplifier 2019 Update 5:
+  - To set your environment variables:
+    - csh/tcsh users: source
+/home/pqy7172/intel/vtune_amplifier_2019.5.0.601413/amplxe-vars.csh
+    - bash users: source
+/home/pqy7172/intel/vtune_amplifier_2019.5.0.601413/amplxe-vars.sh
+  - To start the graphical user interface: amplxe-gui
+  - To use the command-line interface: amplxe-cl
+  - For additional product configuration instructions, see the 
+    post-installation steps in the Intel VTune Amplifier 
+    Installation Guide:
+/home/pqy7172/intel/vtune_amplifier_2019.5.0.601413/documentation/en/
+  - For more getting started resources:
+/home/pqy7172/intel/vtune_amplifier_2019.5.0.601413/documentation/en/welcomepage
+/get_started.htm
+
+To view movies and additional training, visit
+http://www.intel.com/software/products
+
+--------------------------------------------------------------------------------
+Press "Enter" key to quit:
