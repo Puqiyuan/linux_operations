@@ -262,3 +262,9 @@ re-configure IP:
 sudo dhclient ens33 -r
 then get new IP:
 sudo dhclient ens33
+
+lib path:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/puqiyuan/light/
+
+ps event:
+perf top -p 1457
