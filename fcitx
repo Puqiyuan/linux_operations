@@ -1,0 +1,3 @@
+change shuanpin to pinyin:
+edit /home/pqy7172/.config/fcitx/profile like this:
+IMName=pinyin-libpinyin
