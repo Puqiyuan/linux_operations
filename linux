@@ -274,3 +274,7 @@ export  PATH=$PATH:/opt/llvm-3.3/bin
 
 check machine type by gcc:
 gcc -dumpmachine 
+
+compile if no glib.h:
+glib.h which is a part of the libglib2.0-dev package
+sudo apt install libgtk2.0-0-dev
