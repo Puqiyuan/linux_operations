@@ -278,3 +278,8 @@ gcc -dumpmachine
 compile if no glib.h:
 glib.h which is a part of the libglib2.0-dev package
 sudo apt install libgtk2.0-0-dev
+
+when you compile:
+/usr/include/glib-2.0/glib/gtypes.h:32:24: fatal error: glibconfig.h: No such file or directory
+so:
+sudo cp /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h /usr/include/glib-2.0/glibconfig.h
