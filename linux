@@ -271,3 +271,6 @@ perf top -p 1457
 
 export bin search path:
 export  PATH=$PATH:/opt/llvm-3.3/bin
+
+check machine type by gcc:
+gcc -dumpmachine 
