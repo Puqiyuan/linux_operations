@@ -283,3 +283,7 @@ when you compile:
 /usr/include/glib-2.0/glib/gtypes.h:32:24: fatal error: glibconfig.h: No such file or directory
 so:
 sudo cp /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h /usr/include/glib-2.0/glibconfig.h
+
+nm:libc.so.6 no such file, but maybe there is and it's another name but no soft link:
+locate libc.so.6
+ln -s /path/to/libc.so.6 /lib/libc.so.6
