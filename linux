@@ -269,5 +269,26 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/puqiyuan/light/
 ps event:
 perf top -p 1457
 
+<<<<<<< HEAD
 objdump dissassembly use objdump:
 objdump -d file.o
+=======
+export bin search path:
+export  PATH=$PATH:/opt/llvm-3.3/bin
+
+check machine type by gcc:
+gcc -dumpmachine 
+
+compile if no glib.h:
+glib.h which is a part of the libglib2.0-dev package
+sudo apt install libgtk2.0-0-dev
+
+when you compile:
+/usr/include/glib-2.0/glib/gtypes.h:32:24: fatal error: glibconfig.h: No such file or directory
+so:
+sudo cp /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h /usr/include/glib-2.0/glibconfig.h
+
+nm:libc.so.6 no such file, but maybe there is and it's another name but no soft link:
+locate libc.so.6
+ln -s /path/to/libc.so.6 /lib/libc.so.6
+>>>>>>> 37ab4cd0b217f191264fb65b86d8de03d24776ca
