@@ -268,3 +268,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/puqiyuan/light/
 
 ps event:
 perf top -p 1457
+
+objdump dissassembly use objdump:
+objdump -d file.o
