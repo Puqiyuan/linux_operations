@@ -292,3 +292,6 @@ nm:libc.so.6 no such file, but maybe there is and it's another name but no soft 
 locate libc.so.6
 ln -s /path/to/libc.so.6 /lib/libc.so.6
 >>>>>>> 37ab4cd0b217f191264fb65b86d8de03d24776ca
+
+if sudo cannot complete:
+用 dotfile/etc/bash.bashrc 替换掉 /etc/bash.bashrc
